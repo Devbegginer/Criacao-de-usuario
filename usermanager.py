@@ -1,4 +1,4 @@
-from functions import question, add_newuser, find_user, delete_user, lists, authenticate_admin
+from functions import question, add_newuser, find_user, delete_user, lists, authenticate_admin, delete_records
 
 user = {}
 
@@ -22,6 +22,9 @@ if authenticate_admin():
             elif option == "q":
                 print("Exiting the system, goodbye!")
                 break
+
+            elif option == "x":
+                delete_records()
 
             else:
                 print("Invalid option. Please check the correct option and try again")
